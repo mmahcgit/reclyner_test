@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6cd9ff</color>
+    <color name="colorPrimaryDark">#6cd9ff</color>
+    <color name="colorAccent">#888</color>
+    <color name="white">#000000</color>
+    <color name="colorStressBar">#000000</color>
+    <color name="colorBorder">#000000</color>
+    <color name="membership">#00A9FE</color>
+    <color name="gray">#808080</color>
+    <color name="white2">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6cd9ff"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="스마트 리클라이너 연결하기"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="스마트리클라이너에 연결합니다.\n\n아래 연결 버튼을 눌러주세요.\n\n목록에서 SmartRecliner를 선택한 후\n\n잠시만 기다려 주세요."
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_fragment1_start"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:background="@drawable/btn_nomal"
+        android:padding="15dp"
+        android:text="연        결"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>

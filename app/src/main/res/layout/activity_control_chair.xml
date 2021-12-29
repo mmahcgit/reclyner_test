@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_control_chair_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/layout_eng_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            android:layout_marginStart="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="등 신호"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_ecg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/shadow"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="엉덩이 신호"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_ppg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_eng_ecg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_eng_ppg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="실시간 심박수"
+                android:textColor="#e74c3c"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/chart_ppg"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="NotSibling"
+                android:id="@+id/realhr"
+                android:layout_marginLeft="30dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/realhr"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_red_24dp" />
+
+                <TextView
+                    android:id="@+id/bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_toRightOf="@+id/iv_heart"
+                    android:gravity="center"
+                    android:text="0 bpm"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="실시간 스트레스지수"
+                android:textColor="#e74c3c"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/chart_ppg"
+                app:layout_constraintStart_toEndOf="@+id/realhr"
+                tools:ignore="NotSibling"
+                android:id="@+id/realstress"
+                android:layout_marginLeft="100dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/realhr"
+                app:layout_constraintStart_toEndOf="@+id/realhr"
+                android:layout_marginLeft="100dp">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_stress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_red_24dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/stress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_toRightOf="@+id/iv_stress"
+                    android:gravity="center"
+                    android:text="0 bpm"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_eng_mode_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#5b5b5b"
+            android:text="@string/label_eng_mode_end"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>

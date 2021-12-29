@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "585558566757",
+    "firebase_url": "https://smartchair-8bba2.firebaseio.com",
+    "project_id": "smartchair-8bba2",
+    "storage_bucket": "smartchair-8bba2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585558566757:android:532073fdc22e84aa",
+        "android_client_info": {
+          "package_name": "com.emmahc.smartchair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585558566757-03gq2l4q9lrbnrom5pmrea1cif9n9h09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoVgnSPjhE5dGAUDHigPv1bRtIQxXXHTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <net.bohush.geometricprogressview.GeometricProgressView
+        android:id="@+id/progressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:gp_type="kite"
+        app:gp_number_of_angles="8"
+        app:gp_color="@color/colorPrimary"
+        app:gp_duration="800"
+        app:gp_figure_padding="3dp" />
+    <LinearLayout
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="@color/white2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+        <TextView
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/loading_text"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</FrameLayout>

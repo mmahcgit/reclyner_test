@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">SmartRecliner</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="ble_on_request">Enable Bluetooth</string>
+    <string name="reconnect_accept">네</string>
+    <string name="reconnect_decline">아니오</string>
+    <string name="unknown_device">Unknown device</string>
+
+    <!-- Menu items -->
+    <string name="back_key_exit_guide">\'뒤로\' 버튼을 한 번 더 누르시면 종료됩니다.</string>
+
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_activity_select">activity 선택</string>
+    <string name="menu_uuid_select">uuid 선택</string>
+
+    <string name="blescan_item_device_name_text">기기명</string>
+    <string name="blescan_item_device_address_name">기기 주소</string>
+    <string name="blescan_title_text">BLUETOOTH_SCAN_LIST</string>
+    <!-- IntroActivity -->
+    <string name="ok">확인</string>
+
+    <!-- LoginActivity -->
+    <string name="loading">로딩 중입니다...</string>
+
+    <!-- MainActivity -->
+    <string name="confirm_logout">정말 로그아웃하시겠습니까?</string>
+    <string name="yes">예</string>
+    <string name="no">아니요</string>
+    <string name="no_result">결과가 없습니다.</string>
+
+    <!--ControlActivity_not_usevity -->
+    <string name="label_tx_data">TX:</string>
+    <string name="label_rx_data">RX:</string>
+    <string name="label_send">SEND</string>
+    <string name="label_measure_start">측정 시작</string>
+    <string name="label_measuring">측정 중...\n움직이지 마십시오.</string>
+    <string name="label_eng_mode_start">ENG Mode 측정 시작</string>
+    <string name="label_eng_mode_end">측정 중단</string>
+
+    <!-- Warning messages -->
+    <string name="warning_trying_to_connect">연결 시도 중입니다...</string>
+    <string name="warning_connect">\'CONNECT\'버튼을 눌러 연결해주십시오.</string>
+    <string name="warning_wrong_data">Wrong data received</string>
+    <string name="warning_wrong_function">Wrong function received</string>
+    <string name="warning_wrong_packet">Wrong packet received</string>
+    <string name="warning_measure_fail">측정 실패\n다시 시도하여 주십시오.</string>
+    <string name="warning_not_selected_smart_chair">Smart chair와 연결해주십시오.</string>
+    <string name="warning_check_network_state">네트워크 상태를 확인해주십시오.</string>
+    <string name="warning_undefined_chart_name">설정되지 않은 차트명입니다.</string>
+    <string name="warning_undefined_chart_label">설정되지 않은 차트 형식입니다.</string>
+    <string name="warning_no_server_data">서버에 저장된 데이터가 없습니다.</string>
+
+    <!-- LoginActivity -->WarningLoginPwIsShort
+    <string name="WarningLoginIdPwWrong">아이디나 패스워드를 확인해주세요.</string>
+    <string name="WarningLoginIdNotEmailFormat">이메일 형태의 아이디를 입력해주십시오.</string>
+    <string name="WarningLoginPwIsShort">비밀번호는 6자리 이상입니다.</string>
+    <string name="user_info">개인정보 입력완료.</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_result_measure">ResultMeasureActivity</string>
+    <string name="ble_connect_again">블루투스를 재설정하시겠습니까?</string>
+    <string name="loading_text">로딩중 ...</string>
+    <string name="drawer_naviation_layout_sample_user_id">회원 아이디</string>
+    <string name="drawer_navigation_layout_sample_user_name">회원 이름</string>
+    <string name="drawer_menu_setting_text">MemberShip Setting</string>
+    <string name="drawer_menu_ble_setting_text">BLE Setting</string>
+    <string name="Login_email_hint_text">Email</string>
+    <string name="Login_email_icon_description">Email</string>
+    <string name="Login_password_hint_text">Password</string>
+    <string name="Login_button_text">로그인</string>
+    <string name="Login_membershipJoin_text">회원 가입</string>
+    <string name="Tab5_heat_text"><u>온열 기능</u></string>
+    <string name="Tab5_shake_text"><u>흔들 기능</u></string>
+    <string name="Tab5_back_text"><u>등판 조절</u></string>
+    <string name="Tab5_feet_text"><u>발판 조절</u></string>
+    <string name="normal_bp_age_title">나이(Age)</string>
+    <string name="history_fragment_date_title_text">날짜 :</string>
+    <string name="history_fragmnet_heart_rate_title_text">(심박수 수치)</string>
+    <string name="history_fragmnet_stress_title_text">(스트레스 수치)</string>
+    <string name="history_fragment_heate_pressure_title_text">(혈압 수치)</string>
+</resources>
+

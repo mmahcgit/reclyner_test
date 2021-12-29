@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#6cd9ff</item>
+        <item name="colorPrimaryDark">#6cd9ff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/aeromatics</item>
+    </style>
+    <style name="NoAcAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#6cd9ff</item>
+        <item name="colorPrimaryDark">#6cd9ff</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:fontFamily">@font/aeromatics</item>
+        <!--for alertDialog of materialdesign-->
+        <item name="colorSurface">#FFFFFF</item>
+    </style>
+
+    <style name="CustomTitle" parent="android:Theme">
+        <!--<item name="android:actionBarSize">56dp</item>-->
+        <item name="android:windowTitleSize">48dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:fontFamily">@font/aeromatics</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#00000000</item>
+    </style>
+
+
+
+</resources>

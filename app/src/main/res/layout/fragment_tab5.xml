@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/Tab5_totalFrameOut">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/temperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="#0071db"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="1dp"
+                                android:paddingTop="2dp"
+                                android:text="°"
+                                android:textColor="#0071db"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <com.emmahc.smartchair.ui.ColorTextView
+                            android:id="@+id/temperature_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dp"
+                            app:clt_color1="#5b5b5b"
+                            app:clt_spaces="true"
+                            app:clt_txt1=" " />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="35dp"
+                        android:background="#ededed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/humidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="#0071db"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="2dp"
+                                android:paddingTop="4dp"
+                                android:text="%"
+                                android:textColor="#0071db"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <com.emmahc.smartchair.ui.ColorTextView
+                            android:id="@+id/humidity_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20dp"
+                            app:clt_color1="#5b5b5b"
+                            app:clt_spaces="true"
+                            app:clt_txt1=" " />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/Tab5_heat_text"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:background="@drawable/shadow"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/btnhetoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OFF" />
+
+                <Button
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:id="@+id/btnhetone"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level 1" />
+
+                <Button
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/btnhettwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level 2" />
+
+                <Button
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/btnhetthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Level 3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/Tab5_shake_text"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:background="@drawable/shadow"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnmovoff"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="off" />
+
+                <Button
+                    android:id="@+id/btnmovone"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="level 1" />
+
+                <Button
+                    android:id="@+id/btnmovtwo"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="level 2" />
+
+                <Button
+                    android:id="@+id/btnmovthree"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="level 3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/Tab5_back_text"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:background="@drawable/shadow"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnmovbackgo"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="앞으로" />
+                <Button
+                    android:id="@+id/btnmovbackbeg"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="원래대로" />
+                <Button
+                    android:id="@+id/btnmovbackback"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="뒤로" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/Tab5_feet_text"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:background="@drawable/shadow"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnfootgo"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="앞으로" />
+
+                <Button
+                    android:id="@+id/btnfootbeg"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="원래대로" />
+                <Button
+                    android:id="@+id/btnfootback"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="뒤로" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_fragment5_start"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#5b5b5b"
+            android:text="생체 정보 측정"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
